@@ -1,0 +1,14 @@
+<div class="wdghtml" taskKey="com.javarush.task.task17.task1721">
+<h3>Транзакционность</h3>
+<p>Сделать метод <mark>joinData</mark> транзакционным, т.е. если произошел сбой, то данные не должны быть изменены.<br />
+1. Считать с консоли <span class="text-user"><strong>2</strong> </span>имени файла<br />
+2. Считать построчно данные из файлов. Из первого файла &#8212; в <span class="text-red"><strong>allLines</strong></span>, из второго &#8212; в <span class="text-red"><strong>forRemoveLines</strong></span><br />
+В методе <mark>joinData</mark>:<br />
+3. Если список <strong><span class="text-red">allLines</span></strong> содержит все строки из <span class="text-red"><strong>forRemoveLines</strong></span>, то удалить из списка <span class="text-red"><strong>allLines</strong></span> все строки, которые есть в <span class="text-red"><strong>forRemoveLines</strong></span><br />
+4. Если список <span class="text-red"><strong>allLines</strong></span> <strong>НЕ содержит</strong> каких-либо строк, которые есть в <strong><span class="text-red">forRemoveLines</span></strong>, то<br />
+4.1. очистить <span class="text-red"><strong>allLines</strong></span> от данных<br />
+4.2. выбросить исключение <strong>CorruptedDataException</strong><br />
+Метод <mark>joinData</mark> должен вызываться в main. Все исключения обработайте в методе main.<br />
+Не забудь закрыть потоки.</p>
+
+</div>
