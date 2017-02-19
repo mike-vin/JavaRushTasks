@@ -4,18 +4,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-/* 
-name — имя, String
-sex — пол, «м» или «ж», одна буква
-bd — дата рождения в следующем формате 15/04/1990
-
--с — добавляет всех людей с заданными параметрами в конец allPeople,
-выводит id (index) на экран в соответствующем порядке
--u — обновляет соответствующие данные людей с заданными id
--d — производит логическое удаление человека с id, заменяет все его данные на null
--i — выводит на экран информацию о всех людях с заданными id:
-name sex bd... id соответствует индексу в списке
-*/
 
 public class Solution {
     public static volatile List<Person> allPeople = new ArrayList<Person>();
@@ -58,9 +46,6 @@ public class Solution {
             person.setSex(null);
             person.setBirthDay(null);
         }
-        System.out.println("People 1 = " + allPeople.get(0));
-        System.out.println("People 2 = " + allPeople.get(1));
-        System.out.println("allPeople.size = " + allPeople.size());
     }
 
     private static void updatePeople(String[] args) throws ParseException {
@@ -79,9 +64,7 @@ public class Solution {
             person.setSex(sex);
             person.setBirthDay(birth);
 
-            System.out.println(person);
         }
-
     }
 
     private static void addNewPeople(String[] args) throws ParseException {
@@ -94,7 +77,6 @@ public class Solution {
             Person person = args[i + 1].equals("м") ?
                     Person.createMale(name, birth) : Person.createFemale(name, birth);
             allPeople.add(person);
-            System.out.println(person);
             System.out.println(allPeople.size() - 1);
         }
     }
