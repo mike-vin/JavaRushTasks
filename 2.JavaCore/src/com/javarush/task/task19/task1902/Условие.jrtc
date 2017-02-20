@@ -1,0 +1,5 @@
+<div class="wdghtml" taskKey="com.javarush.task.task19.task1902">
+<h3>Адаптер</h3>
+<p>Используй класс <span class="text-corporate"><strong>AdapterFileOutputStream</strong></span>, чтобы адаптировать <span class="text-corporate"><strong>FileOutputStream</strong></span> к новому интерфейсу <span class="text-corporate"><strong>AmigoStringWriter</strong></span>.</p>
+
+</div>
